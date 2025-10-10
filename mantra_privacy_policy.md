@@ -62,4 +62,4 @@ If you have any questions about these Terms, please contact Us:
 
 Email: shukla.abhishek833@gmail.com
 
-Policy Host URL (where this document is located): https://www.termsfeed.com/help/where-can-i-host-my-privacy-policy/
+Policy Host URL : [https://www.termsfeed.com/help/where-can-i-host-my-privacy-policy/](https://that-abhishek.github.io/mantra_privacy_policy.md)
