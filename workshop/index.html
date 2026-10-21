@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Where AI Systems Break · Workshop · Abhishek Shukla</title>
+<meta name="description" content="A 4-hour hands-on workshop for engineers building with LLMs: cost, retrieval, evals, agent guardrails and memory. Saturday 14 November 2026.">
+<meta property="og:title" content="Where AI systems break: a hands-on workshop">
+<meta property="og:description" content="Five labs. You run five small AI systems, watch each fail, and write the fix. Saturday 14 November 2026.">
+<meta property="og:url" content="https://thatabhishek.com/workshop/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='1.5' y='1.5' width='29' height='29' rx='7' fill='%23000' stroke='%23fff' stroke-width='2'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-weight='800' font-size='15' text-anchor='middle' fill='%23FF5252'%3Ea.%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Poppins:wght@400;500;600;800&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="frame">
+    <div class="frame-top">
+      <a class="handle" href="../">@that_abhishek</a>
+      <nav aria-label="Site"><ul>
+        <li><a href="../">home</a></li>
+        <li><a href="./" aria-current="page">workshop</a></li>
+        <li><a href="#teams">for teams</a></li>
+      </ul></nav>
+    </div>
+    <div class="track">Workshop</div>
+    <h1>Where AI<br>systems <span class="red">break.</span></h1>
+    <svg class="underline" viewBox="0 0 520 14" preserveAspectRatio="none" aria-hidden="true"><path d="M3 9 C 120 4, 260 11, 380 6 S 500 5, 517 7" fill="none" stroke="#FFD700" stroke-width="5" stroke-linecap="round"/></svg>
+    <p class="hand">A 4-hour hands-on session for engineers building with LLMs. You run five small AI systems, watch each one fail, and write the fix.</p>
+    <div class="facts">
+      <span class="fact">Sat 14 Nov 2026</span>
+      <span class="fact">4 hours</span>
+      <span class="fact">Python, runs offline</span>
+      <span class="fact">no API key</span>
+      <span class="fact">online or Bangalore</span>
+    </div>
+    <div class="ctas">
+      <a class="btn primary" href="#reserve">Reserve a seat</a>
+      <a class="btn" href="#teams">Run it for your team</a>
+    </div>
+    <div class="frame-foot">
+      <span class="nohype">No hype. No tool lists.</span>
+      <span class="how">how AI actually works</span>
+    </div>
+  </header>
+
+  <section id="labs">
+    <div class="label">what you build</div>
+    <h2>Five labs. <span class="red">Five failures.</span></h2>
+    <p class="body">Each lab hands you a working system with one file left to write. The tests tell you when it works. The experiment after it shows you why it matters in production.</p>
+    <div class="labs">
+      <article class="lab"><span class="n">1</span><h3>Cost and caching</h3>
+        <p>Why a 12-turn chat bills 43,800 input tokens, what prompt caching actually saves, and how one timestamp in the prompt quietly kills the cache.</p>
+        <div class="run"><span class="bad">43,800 tokens billed</span><span class="good">cache hits back ✓</span></div></article>
+      <article class="lab"><span class="n">2</span><h3>Retrieval with permissions</h3>
+        <p>A role filter applied after search starves the results and the bot says "no policy found". You move the filter inside search, then measure recall before and after a reranker.</p>
+        <div class="run"><span class="bad">0 of 10 visible</span><span class="good">filter inside search ✓</span></div></article>
+      <article class="lab"><span class="n">3</span><h3>Evals that mean something</h3>
+        <p>Why 95% to 97% on 100 test items is noise, how many items you need before a change is real, and how one critical regression should block a prompt that scores "better".</p>
+        <div class="run"><span class="bad">+2% on 100 items</span><span class="good">significance check ✓</span></div></article>
+      <article class="lab"><span class="n">4</span><h3>Agent guardrails</h3>
+        <p>A compromised model tries to move ₹38,000. You write the policy code that stops it without reading a word of the prompt.</p>
+        <div class="run"><span class="bad">₹38,000 transfer</span><span class="good">blocked in code ✓</span></div></article>
+      <article class="lab"><span class="n">5</span><h3>Memory and state</h3>
+        <p>Four context tiers under one token budget. A running summary acts on a customer's stale address, and you decide what should survive into the next session.</p>
+        <div class="run"><span class="bad">ships to the old address</span><span class="good">state kept as facts ✓</span></div></article>
+    </div>
+    <div>
+      <p><span class="rule">RULE: you write the fix, the tests tell you it works</span></p>
+      <p class="rule-note">this workshop: no slides to watch, code to run</p>
+    </div>
+  </section>
+
+  <section id="fit">
+    <div class="label">who it's for</div>
+    <div class="teams">
+      <div>
+        <h3 style="font-size:22px">A good fit if you</h3>
+        <ul class="plain">
+          <li>Are a backend, mobile or platform engineer, or an EM, moving into AI systems</li>
+          <li>Have shipped an LLM demo and want to know what breaks at scale</li>
+          <li>Can read basic Python (a Kotlin/Java-to-Python cheat sheet is included)</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:22px">Not a fit if you want</h3>
+        <ul class="plain">
+          <li>An intro to ChatGPT or prompt tips</li>
+          <li>Model training or fine-tuning from scratch</li>
+          <li>Slides to watch rather than code to run</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="reserve">
+    <div class="label">seats</div>
+    <h2>Two ways <span class="red">in.</span></h2>
+    <div class="tiers">
+      <div class="tier">
+        <span class="name">workshop</span>
+        <span class="price">₹3,000</span>
+        <ul class="plain"><li>The full 4-hour session</li><li>All five labs, yours to keep</li><li>Live Q&amp;A throughout</li></ul>
+      </div>
+      <div class="tier hi">
+        <span class="name">workshop + design review</span>
+        <span class="price">₹5,000</span>
+        <ul class="plain"><li>Everything in the workshop</li><li>A 1:1 review of an AI system design you bring: your current project or one you're planning</li></ul>
+      </div>
+    </div>
+    <div class="cta-box">
+      <h3>Reserve a seat</h3>
+      <p class="hand">Message me on LinkedIn with your tier and online or Bangalore. The format follows demand. I'll send a payment link; your seat is held once it's paid.</p>
+      <span class="reply">₹5,000 · Bangalore</span>
+      <a class="btn yellow" style="align-self:flex-start" href="https://www.linkedin.com/in/that-abhishek/" rel="noopener">Message me on LinkedIn</a>
+    </div>
+  </section>
+
+  <section id="teams">
+    <div class="label">for engineering teams</div>
+    <h2>Run it <span class="red">privately.</span></h2>
+    <div class="teams">
+      <div>
+        <p class="body">The same labs, run for one team, with the examples pulled toward what you're actually building. Useful when a team is moving from an LLM demo to something customers depend on, and needs a shared picture of where cost, retrieval, evals and agent actions go wrong.</p>
+        <ul class="plain">
+          <li>Half day, online or at your office in Bangalore</li>
+          <li>Labs run offline on engineers' laptops; no data leaves your network</li>
+          <li>Optional follow-up review of one of your team's designs</li>
+        </ul>
+      </div>
+      <div class="cta-box">
+        <p class="hand">Tell me your team size and what you're building. I'll come back with a plan and a price.</p>
+        <a class="btn yellow" style="align-self:flex-start" href="https://www.linkedin.com/in/that-abhishek/" rel="noopener">Ask about a team session</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="label">who's running it</div>
+    <div class="byline"><img class="avatar" src="../img/abhishek.jpg" alt="Abhishek Shukla" width="96" height="96">
+    <p class="body">Abhishek Shukla. 13 years building mobile and backend systems, now building and teaching AI systems. Every lab here comes out of an experiment I ran for <a href="https://instagram.com/ai.transition">@ai.transition</a>. <a href="../">More about me and the series →</a></p></div>
+  </section>
+
+  <footer>
+    <span class="nohype">No hype. No tool lists.</span>
+    <div class="links">
+      <a href="../">home</a>
+      <a href="https://www.linkedin.com/in/that-abhishek/">linkedin</a>
+      <a href="https://instagram.com/ai.transition">instagram</a>
+      <a href="https://github.com/that-abhishek">github</a>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
