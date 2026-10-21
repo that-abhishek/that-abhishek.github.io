@@ -15,6 +15,27 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Poppins:wght@400;500;600;800&display=swap">
 <link rel="stylesheet" href="../style.css">
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "z19dguc998");
+</script>
+<script>
+  // Where the visit came from: ?ref=li (LinkedIn DM) / ?ref=ig (Instagram story). Kept for the whole visit.
+  (function(){
+    var ref=null;
+    try{ ref=new URLSearchParams(location.search).get("ref"); if(ref) sessionStorage.setItem("ref",ref); else ref=sessionStorage.getItem("ref"); }catch(e){}
+    clarity("set","ref",ref||"direct");
+    clarity("set","page",location.pathname);
+    // Clicks on anything marked data-track become Clarity events
+    document.addEventListener("click",function(e){
+      var el=e.target.closest&&e.target.closest("[data-track]");
+      if(el) clarity("event",el.getAttribute("data-track"));
+    });
+  })();
+</script>
 </head>
 <body>
 <div class="wrap">
@@ -40,8 +61,8 @@
       <span class="fact">online or Bangalore</span>
     </div>
     <div class="ctas">
-      <a class="btn primary" href="#reserve">Reserve a seat</a>
-      <a class="btn" href="#teams">Run it for your team</a>
+      <a data-track="ws_reserve_anchor" class="btn primary" href="#reserve">Reserve a seat</a>
+      <a data-track="ws_teams_anchor" class="btn" href="#teams">Run it for your team</a>
     </div>
     <div class="frame-foot">
       <span class="nohype">No hype. No tool lists.</span>
@@ -117,7 +138,7 @@
       <h3>Reserve a seat</h3>
       <p>Message me on LinkedIn with your tier and online or Bangalore. The format follows demand. I'll send a payment link; your seat is held once it's paid.</p>
       <span class="reply">₹5,000 · Bangalore</span>
-      <a class="btn yellow" style="align-self:flex-start" href="https://www.linkedin.com/in/that-abhishek/" rel="noopener">Message me on LinkedIn</a>
+      <a class="btn yellow" style="align-self:flex-start" data-track="ws_reserve_linkedin" href="https://www.linkedin.com/in/that-abhishek/" rel="noopener">Message me on LinkedIn</a>
     </div>
   </section>
 
@@ -135,7 +156,7 @@
       </div>
       <div class="cta-box">
         <p>Tell me your team size and what you're building. I'll come back with a plan and a price.</p>
-        <a class="btn yellow" style="align-self:flex-start" href="https://www.linkedin.com/in/that-abhishek/" rel="noopener">Ask about a team session</a>
+        <a class="btn yellow" style="align-self:flex-start" data-track="ws_team_linkedin" href="https://www.linkedin.com/in/that-abhishek/" rel="noopener">Ask about a team session</a>
       </div>
     </div>
   </section>
