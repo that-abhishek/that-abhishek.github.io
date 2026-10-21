@@ -23,15 +23,15 @@
     <div class="frame-top">
       <a class="handle" href="../">@that_abhishek</a>
       <nav aria-label="Site"><ul>
-        <li><a href="../">home</a></li>
-        <li><a href="./" aria-current="page">workshop</a></li>
-        <li><a href="#teams">for teams</a></li>
+        <li><a href="../">Home</a></li>
+        <li><a href="./" aria-current="page">Workshop</a></li>
+        <li><a href="#teams">For teams</a></li>
       </ul></nav>
     </div>
     <div class="track">Workshop</div>
     <h1>Where AI<br>systems <span class="red">break.</span></h1>
     <svg class="underline" viewBox="0 0 520 14" preserveAspectRatio="none" aria-hidden="true"><path d="M3 9 C 120 4, 260 11, 380 6 S 500 5, 517 7" fill="none" stroke="#FFD700" stroke-width="5" stroke-linecap="round"/></svg>
-    <p class="hand">A 4-hour hands-on session for engineers building with LLMs. You run five small AI systems, watch each one fail, and write the fix.</p>
+    <p class="lede">A 4-hour hands-on session for engineers building with LLMs. You run five small AI systems, watch each one fail, and write the fix.</p>
     <div class="facts">
       <span class="fact">Sat 14 Nov 2026</span>
       <span class="fact">4 hours</span>
@@ -54,19 +54,19 @@
     <h2>Five labs. <span class="red">Five failures.</span></h2>
     <p class="body">Each lab hands you a working system with one file left to write. The tests tell you when it works. The experiment after it shows you why it matters in production.</p>
     <div class="labs">
-      <article class="lab"><span class="n">1</span><h3>Cost and caching</h3>
+      <article class="lab"><div class="head"><span class="n">1</span><h3>Cost and caching</h3></div>
         <p>Why a 12-turn chat bills 43,800 input tokens, what prompt caching actually saves, and how one timestamp in the prompt quietly kills the cache.</p>
         <div class="run"><span class="bad">43,800 tokens billed</span><span class="good">cache hits back ✓</span></div></article>
-      <article class="lab"><span class="n">2</span><h3>Retrieval with permissions</h3>
+      <article class="lab"><div class="head"><span class="n">2</span><h3>Retrieval with permissions</h3></div>
         <p>A role filter applied after search starves the results and the bot says "no policy found". You move the filter inside search, then measure recall before and after a reranker.</p>
         <div class="run"><span class="bad">0 of 10 visible</span><span class="good">filter inside search ✓</span></div></article>
-      <article class="lab"><span class="n">3</span><h3>Evals that mean something</h3>
+      <article class="lab"><div class="head"><span class="n">3</span><h3>Evals that mean something</h3></div>
         <p>Why 95% to 97% on 100 test items is noise, how many items you need before a change is real, and how one critical regression should block a prompt that scores "better".</p>
         <div class="run"><span class="bad">+2% on 100 items</span><span class="good">significance check ✓</span></div></article>
-      <article class="lab"><span class="n">4</span><h3>Agent guardrails</h3>
+      <article class="lab"><div class="head"><span class="n">4</span><h3>Agent guardrails</h3></div>
         <p>A compromised model tries to move ₹38,000. You write the policy code that stops it without reading a word of the prompt.</p>
         <div class="run"><span class="bad">₹38,000 transfer</span><span class="good">blocked in code ✓</span></div></article>
-      <article class="lab"><span class="n">5</span><h3>Memory and state</h3>
+      <article class="lab"><div class="head"><span class="n">5</span><h3>Memory and state</h3></div>
         <p>Four context tiers under one token budget. A running summary acts on a customer's stale address, and you decide what should survive into the next session.</p>
         <div class="run"><span class="bad">ships to the old address</span><span class="good">state kept as facts ✓</span></div></article>
     </div>
@@ -78,7 +78,7 @@
 
   <section id="fit">
     <div class="label">who it's for</div>
-    <div class="teams">
+    <div class="two">
       <div>
         <h3 style="font-size:22px">A good fit if you</h3>
         <ul class="plain">
@@ -103,7 +103,7 @@
     <h2>Two ways <span class="red">in.</span></h2>
     <div class="tiers">
       <div class="tier">
-        <span class="name">workshop</span>
+        <span class="name">Workshop</span>
         <span class="price">₹3,000</span>
         <ul class="plain"><li>The full 4-hour session</li><li>All five labs, yours to keep</li><li>Live Q&amp;A throughout</li></ul>
       </div>
@@ -115,7 +115,7 @@
     </div>
     <div class="cta-box">
       <h3>Reserve a seat</h3>
-      <p class="hand">Message me on LinkedIn with your tier and online or Bangalore. The format follows demand. I'll send a payment link; your seat is held once it's paid.</p>
+      <p>Message me on LinkedIn with your tier and online or Bangalore. The format follows demand. I'll send a payment link; your seat is held once it's paid.</p>
       <span class="reply">₹5,000 · Bangalore</span>
       <a class="btn yellow" style="align-self:flex-start" href="https://www.linkedin.com/in/that-abhishek/" rel="noopener">Message me on LinkedIn</a>
     </div>
@@ -124,7 +124,7 @@
   <section id="teams">
     <div class="label">for engineering teams</div>
     <h2>Run it <span class="red">privately.</span></h2>
-    <div class="teams">
+    <div class="two">
       <div>
         <p class="body">The same labs, run for one team, with the examples pulled toward what you're actually building. Useful when a team is moving from an LLM demo to something customers depend on, and needs a shared picture of where cost, retrieval, evals and agent actions go wrong.</p>
         <ul class="plain">
@@ -134,7 +134,7 @@
         </ul>
       </div>
       <div class="cta-box">
-        <p class="hand">Tell me your team size and what you're building. I'll come back with a plan and a price.</p>
+        <p>Tell me your team size and what you're building. I'll come back with a plan and a price.</p>
         <a class="btn yellow" style="align-self:flex-start" href="https://www.linkedin.com/in/that-abhishek/" rel="noopener">Ask about a team session</a>
       </div>
     </div>
@@ -149,10 +149,10 @@
   <footer>
     <span class="nohype">No hype. No tool lists.</span>
     <div class="links">
-      <a href="../">home</a>
-      <a href="https://www.linkedin.com/in/that-abhishek/">linkedin</a>
-      <a href="https://instagram.com/ai.transition">instagram</a>
-      <a href="https://github.com/that-abhishek">github</a>
+      <a href="../">Home</a>
+      <a href="https://www.linkedin.com/in/that-abhishek/">LinkedIn</a>
+      <a href="https://instagram.com/ai.transition">Instagram</a>
+      <a href="https://github.com/that-abhishek">GitHub</a>
     </div>
   </footer>
 </div>
